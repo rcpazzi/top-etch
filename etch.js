@@ -1,11 +1,9 @@
-container = document.querySelector(".container")
-
+const container = document.querySelector(".container")
+const gridForm = document.querySelector("#grid-form")
 const canvasHeight = container.clientWidth
-gridForm = document.querySelector("#grid-form")
 
 gridForm.addEventListener('submit', e => {
     e.preventDefault();
-
     let gridSize = document.querySelector("#grid-size").value
     generateGrid(gridSize)
 })
