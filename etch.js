@@ -33,6 +33,7 @@ function generateGrid(gridSize){
 
 container.addEventListener('mousemove', e => {
     if (e.target.classList.contains('grid')){
+        
         e.target.style.backgroundColor = 'black'
     }
 })
